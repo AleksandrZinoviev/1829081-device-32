@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Александр Зиновьев](https://up.htmlacademy.ru/htmlcss/32/user/1829081).
-* Наставник: `Неизвестно`.
+- Студент: [Александр Зиновьев](https://up.htmlacademy.ru/htmlcss/32/user/1829081).
+- Наставник: [`Арсений Матыцин`](https://htmlacademy.ru/profile/id225539).
 
 ---
 
