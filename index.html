@@ -3,32 +3,38 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
+    <div class="logo">
+      <img class="header-logo" src="/images/logo/headlogo.svg" alt="Логотип device" height="36" width="145">
+    </div>
     <header class="page-header">
       <div class="menu-header">
         <ul class="menu-item">
           <li>
-            <!-- Сюда нужно поставить иконку "увеличительное стекло"-->
+            <img class="icon-search" src="/images/icon/headerIcon/search.svg" width="16" height="16" alt="Иконка увелечительное стекло">
             <input type="text" placeholder="Поиск по сайту"/>
           </li>
           <li>
-            <!-- Сюда нужно поставить иконку "силуэт"-->
+            <img src="/images/icon/headerIcon/entrance.svg" alt="Иконка входа" width="12" height="12" class="icon-entrance">
             <button class="button" name="cin">Войти</button>
           </li>
           <li>
-            <!-- Сюда нужно поставить иконку "график"-->
+            <img src="/images/icon/headerIcon/compare.svg" alt="Икона сравнения товаров" class="icon-compare" height="12" width="10">
             <button class="button" name="compare">Сравнить</button>
           </li>
           <li>
-            <!-- Сюда нужно поставить иконку "карзина"-->
+            <img src="/images/icon/headerIcon/buying.svg" alt="Иконка корзина с покупками" class="icon-buying" height="14" width="16">
             <button class="button" name="purchases">Корзина</button>
           </li>
         </ul>
       </div>
       <div class="catalog">
         <p>Каталог товаров</p>
-        <button class="button" name="catalog">+</button>
+        <button class="button" name="catalog">
+          <img src="/images/plus.svg" alt="Кнопка открытия каталога" class="open-catalog" width="" height="">
+        </button>
         </div>
         <nav class="page-nav">
           <ul class="nav-item">
@@ -43,20 +49,33 @@
             </li>
           </ul>
         </nav>
+
     </header>
     <main>
       <h1 class="visually-hidden">Девайс</h1>
       <div class="slider-product-description">
-          <button class="button" name="back"></button>
-          <img src="" alt="product picture">
-          <button class="button" name="forward"></button>
+          <button class="button" name="back"><img src="/images/slider/btnLeft.svg" alt="Левый переключатель слайдера" class="btnleft" height="60" width="20"></button>
+          <img src="/images/slider/slid-quadcopter.png" alt="product picture" height="560" width="560">
+          <button class="button" name="forward"><img src="/images/slider/btnRight.svg" alt="Правый переключатель слайдера" class="btnleft" height="60" width="20"></button>
           <h3>Порхает как бабочка, жалит как пчела!</h3>
           <p>
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
             замаскированным под стандартную камеру.
           </p>
           <button class="button" name="details">подробнее</button>
-          <p>. . .</p>
+          <div class="slide-indicator">
+            <ul class="slide-indicator-circle">
+              <li>
+                <div class="circle"></div>
+              </li>
+              <li>
+                <div class="circle"></div>
+              </li>
+              <li>
+                <div class="circle"></div>
+              </li>
+            </ul>
+          </div>
           <table>
               <tr><td>800 м</td><td>50 м</td></tr>
               <tr><td>Дальность полета</td><td>Радиус поражения</td></tr>
@@ -66,27 +85,27 @@
       </d>
       <ul class="assortment-list">
         <li class="product-category">
-          <img src="" alt="A virtual reality" />
+          <img src="/images/categories/VirtualReality.svg" alt="A virtual reality" height="55" width="97"/>
           <p>Виртуальная реальность</p>
         </li>
         <li class="product-category">
-          <img src="" alt="Selfie monopods" />
+          <img src="/images/categories/Monopods.svg" alt="Selfie monopods" height="117" width="86"/>
           <p>Моноподы для селфи</p>
         </li>
         <li class="product-category">
-          <img src="" alt="Action Cameras" />
+          <img src="/images/categories/ActionCam.svg" alt="Action Cameras" />
           <p>Экшн-камеры</p>
         </li>
         <li class="product-category">
-          <img src="" alt="Fitness bracelets" />
+          <img src="/images/categories/FitBracelets.svg" alt="Fitness bracelets" />
           <p>Фитнес-браслеты</p>
         </li>
         <li class="product-category">
-          <img src="" alt="Smart watch" />
+          <img src="/images/categories/SmartWatch.svg" alt="Smart watch" />
           <p>Умные часы</p>
         </li>
         <li class="product-category">
-          <img src="" alt="Quadrocopters" />
+          <img src="/images/categories/Quadrocopters.svg" alt="Quadrocopters" />
           <p>Квадрокоптеры</p>
         </li>
       </ul>
@@ -109,12 +128,13 @@
             совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
             ваш этаж.
           </p>
-          <img src="" alt="postman">
+          <img src="/images/tabs/delivery 2.svg" alt="postman">
         </div>
       </section>
       <section class="about">
         <div class="special-delivery" title="Доставим редкий товар под заказ">
-          <button class="button" name="specialdelivery" title="Доставим редкий товар под заказ">+</button>
+
+          <button class="button" name="specialdelivery" title="Доставим редкий товар под заказ"><img src="/images/icon/icondelivery.svg" alt="" class="icon-delivery"></button>
         </div>
         <div class="about-us">
           <h2>О нас</h2>
@@ -161,6 +181,7 @@
         <input type="text" name="" id="" placeholder="Ваш e-mail" />
         <input type="button" value="ПОДПИСАТЬСЯ" />
       </form>
+      <img src="/images/icon/checkmark.svg" alt="Зеленая галочка">
       <p>Это бесплатно</p>
     </section>
     <footer class="page-footer">
@@ -180,9 +201,9 @@
       </nav>
       <a class="contacts-phone" href="tel:88128121212">Тел.: +7 (812)812-12-12</a>
       <ul class="social-networks">
-        <li><a href="https://www.facebook.com/htmlacademy" class="social-networks-link"><img src="" alt="Facebook"></a></li>
-        <li class=""><a href="https://www.instagram.com/htmlacademy" class="social-networks-link"><img src="" alt="Instagram"></a></li>
-        <li class=""><a href="https://twitter.com/htmlacademy_ru" class="social-networks-link"><img src="" alt="Twitter"></a></li>
+        <li><a href="https://www.facebook.com/htmlacademy" class="social-networks-link"><img src="/images/icon/socneticon/facebook.svg" alt="Facebook"></a></li>
+        <li class=""><a href="https://www.instagram.com/htmlacademy" class="social-networks-link"><img src="/images/icon/socneticon/instagram.svg" alt="Instagram"></a></li>
+        <li class=""><a href="https://twitter.com/htmlacademy_ru" class="social-networks-link"><img src="/images/icon/socneticon/twitter.svg" alt="Twitter"></a></li>
       </ul>
       <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
     </footer>
