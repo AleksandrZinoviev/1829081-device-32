@@ -30,14 +30,64 @@ font-display: swap;
   }
 
 body{
-  background-color: aqua;
+  position: relative;
+  margin: 0;
   font-family: "Rubik", sans-serif;
-
+  width: 1440px;
+  background-color: #E5E5E5;
   font-size: 16px;
   line-height: 30px;
 }
-.page-header{
-
-  background-color: #FFE17F;
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0
 }
 
+.page-header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1160px;
+  height: 300px;
+  top: 40px;
+  left: 140px;
+  margin-top: 40px;
+  margin-left: 140px;
+  margin-right: 140px;
+  background-color: #FFE17F;
+}
+.logo{
+  margin-top: -27px;
+  margin-left: 61px;
+  position: absolute;
+  z-index: 10;
+}
+.search{
+  margin-top: 49px;
+  margin-left: 60px;
+}
+.menu-header{
+  margin-top: 49px;
+}
+.menu-header li{
+  display: inline;
+}
+.nav-item li{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 20px;
+  display: inline;
+}
+.main-content{
+  margin-top: 40px;
+  margin-left: 140px;
+  margin-right: 140px;
+
+}
